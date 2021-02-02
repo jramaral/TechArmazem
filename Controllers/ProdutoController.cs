@@ -43,12 +43,12 @@ namespace ArmazemAPI.Controllers
             }
         }
         
-        [HttpGet("{CursoId}")]
-        public async Task<IActionResult> Get(int cursoId)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
         {
             try
             {
-                var curso = await _Repo.RetornarProdutoPorIdAsync(cursoId);
+                var curso = await _Repo.RetornarProdutoPorIdAsync(id);
                 var result = _mapper.Map<ProdutoDto>(curso);
                 return Ok(result);
             }
@@ -80,7 +80,7 @@ namespace ArmazemAPI.Controllers
         
        
         [HttpPost]
-        [Route("/desconto")]
+        [Route("desconto")]
        public  IActionResult AplicarDesconto(PocoProd prod)
         {
             try
@@ -97,7 +97,61 @@ namespace ArmazemAPI.Controllers
             }
             return BadRequest();
         }
-        
+
+       [HttpDelete]
+       [Route("{Id}")]
+       public async Task<IActionResult> Excluir(int Id)
+       {
+           try
+           {
+               if (await _Repo.TemMovimento(Id))
+               {
+                   return  StatusCode(StatusCodes.Status400BadRequest, "Não é possivel remover. Existe uma movimentação vinculada para esse produto!");
+               }
+               
+               var result = await _Repo.RetornarProdutoPorIdAsync(Id);
+               if (result == null) return NotFound();
+
+               _Repo.Delete(result);
+               if (await _Repo.SaveChangeAsync())
+               {
+                   return Ok();
+               }
+
+           }
+           catch (Exception)
+           {
+               return StatusCode(StatusCodes.Status500InternalServerError, "Impossível executar essa operação agora!");
+           }
+
+           return BadRequest();
+
+       }
        
+       [HttpPut("{id}")]
+       public async Task<IActionResult> Put(int id, ProdutoDto model)
+       {
+           try
+           {
+               var produto = await _Repo.RetornarProdutoPorIdAsync(model.Id);
+              
+               if (produto == null) return NotFound();
+
+               _mapper.Map(model, produto);
+               _Repo.Update(produto);
+               if (await _Repo.SaveChangeAsync())
+               {
+                   return Created($"/api/produto/{model.Id}", _mapper.Map<ProdutoDto>(model));
+               }
+           }
+           catch (Exception)
+           {
+               return this.StatusCode(StatusCodes.Status500InternalServerError, "Erro no servidor!");
+           }
+
+           return BadRequest();
+         
+       }
+
     }
 }

@@ -70,5 +70,16 @@ namespace ArmazemAPI.Repositories
             }
            
         }
+
+        public async Task<bool> TemMovimento(int prod)
+        {
+            var mov = await _Context.Items.FirstOrDefaultAsync(i => i.ProdutoId == prod);
+            if (mov != null)
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }

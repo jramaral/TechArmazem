@@ -12,6 +12,8 @@ namespace ArmazemAPI.Repositories
 
         bool AplicarDesconto(PocoProd prod);
 
+        Task<bool> TemMovimento(int prod);
+
 
     }
 }
