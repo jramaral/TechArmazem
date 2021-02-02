@@ -1,0 +1,7 @@
+﻿namespace ArmazemAPI.Repositories
+{
+    public class Cliente
+    {
+        
+    }
+}
