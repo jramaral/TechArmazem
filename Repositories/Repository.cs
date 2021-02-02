@@ -39,40 +39,5 @@ namespace ArmazemAPI.Repositories
         }
 
      
-        // public async Task<Matricula> GetMatricula(int userId, int cursoId)
-        // {
-        //     var mat = _Context.Matriculas.FirstOrDefaultAsync(x => x.AlunoId == userId && x.CursoId == cursoId);
-        //     return await mat;
-        // }
-        //
-        // public async Task<Matricula> GetMatriculaByIdAsync(int matriculaId)
-        // {
-        //     var query = await _Context.Matriculas.FirstOrDefaultAsync(x => x.Id == matriculaId);
-        //     return query;
-        // }
-
-        // public async Task<dynamic> GetCursoByAlundoIdAsync(int userId)
-        // {
-        //     dynamic query = (
-        //         from m in _Context.Matriculas
-        //         join c in _Context.Cursos on m.CursoId equals c.Id
-        //         where m.AlunoId == userId
-        //         select new
-        //         {
-        //             Id = c.Id,
-        //             NomeCurso = c.NomeCurso,
-        //             Promocao = c.Promocao,
-        //             Valor = c.Valor,
-        //             CargaHoraria = c.CargaHoraria,
-        //             ValorPromocao = c.ValorPromocao,
-        //             MatriculaId = m.Id,
-        //             Resumo = c.Resumo
-        //             
-        //         }).ToListAsync();
-        //
-        //     
-        //     return  await query;
-        //
-        // }
     }
 }
