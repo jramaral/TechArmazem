@@ -52,7 +52,7 @@ namespace ArmazemAPI.Controllers
             {
                 var ite = _mapper.Map<Item>(model);
             
-                if (!_Repo.IsVenda(ite.CompraVendaId))
+                if (!_Repo.IsCompra(ite.CompraVendaId))
                 {
                     return StatusCode(StatusCodes.Status400BadRequest, $"O codigo {ite.CompraVendaId} não é uma compra");
                 }

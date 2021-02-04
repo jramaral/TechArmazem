@@ -4,11 +4,17 @@
     <projectFile>ArmazemAPI.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a067f72-282b-4cdb-99ff-f5f7c81de4df" name="Default Changelist" comment="" />
+    <list default="true" id="4a067f72-282b-4cdb-99ff-f5f7c81de4df" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArmazemAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArmazemAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CompraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CompraController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -34,11 +40,12 @@
         <option value="$PROJECT_DIR$/Repositories/ICompraVendaRepository.cs" />
         <option value="$PROJECT_DIR$/Repositories/CompraVendaRepository.cs" />
         <option value="$PROJECT_DIR$/Controllers/VendaController.cs" />
-        <option value="$PROJECT_DIR$/Controllers/CompraController.cs" />
         <option value="$PROJECT_DIR$/Dto/POCO/PocoCursos.cs" />
         <option value="$PROJECT_DIR$/Repositories/IProdutoRepository.cs" />
         <option value="$PROJECT_DIR$/Repositories/ProdutoRepository.cs" />
         <option value="$PROJECT_DIR$/Controllers/ProdutoController.cs" />
+        <option value="$PROJECT_DIR$/Repositories/Repository.cs" />
+        <option value="$PROJECT_DIR$/Controllers/CompraController.cs" />
       </list>
     </option>
   </component>
@@ -101,7 +108,8 @@
       <workItem from="1612277503054" duration="2548000" />
       <workItem from="1612280096423" duration="389000" />
       <workItem from="1612280572966" duration="40000" />
-      <workItem from="1612280664611" duration="17598000" />
+      <workItem from="1612280664611" duration="22380000" />
+      <workItem from="1612452958809" duration="860000" />
     </task>
     <servers />
   </component>
@@ -118,22 +126,22 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1111" height="464" key="DebuggerActiveHint/0.0.1600.870@0.0.1600.870" timestamp="1612290449422" />
-    <state width="1557" height="226" key="GridCell.Tab.0.bottom" timestamp="1612301774946">
+    <state width="1557" height="226" key="GridCell.Tab.0.bottom" timestamp="1612358749778">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state width="1557" height="226" key="GridCell.Tab.0.bottom/0.0.1600.870@0.0.1600.870" timestamp="1612301774946" />
-    <state width="1557" height="226" key="GridCell.Tab.0.center" timestamp="1612301774945">
+    <state width="1557" height="226" key="GridCell.Tab.0.bottom/0.0.1600.870@0.0.1600.870" timestamp="1612358749778" />
+    <state width="1557" height="226" key="GridCell.Tab.0.center" timestamp="1612358749778">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state width="1557" height="226" key="GridCell.Tab.0.center/0.0.1600.870@0.0.1600.870" timestamp="1612301774945" />
-    <state width="1557" height="226" key="GridCell.Tab.0.left" timestamp="1612301774945">
+    <state width="1557" height="226" key="GridCell.Tab.0.center/0.0.1600.870@0.0.1600.870" timestamp="1612358749778" />
+    <state width="1557" height="226" key="GridCell.Tab.0.left" timestamp="1612358749778">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state width="1557" height="226" key="GridCell.Tab.0.left/0.0.1600.870@0.0.1600.870" timestamp="1612301774945" />
-    <state width="1557" height="226" key="GridCell.Tab.0.right" timestamp="1612301774945">
+    <state width="1557" height="226" key="GridCell.Tab.0.left/0.0.1600.870@0.0.1600.870" timestamp="1612358749778" />
+    <state width="1557" height="226" key="GridCell.Tab.0.right" timestamp="1612358749778">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state width="1557" height="226" key="GridCell.Tab.0.right/0.0.1600.870@0.0.1600.870" timestamp="1612301774945" />
+    <state width="1557" height="226" key="GridCell.Tab.0.right/0.0.1600.870@0.0.1600.870" timestamp="1612358749778" />
     <state width="1557" height="307" key="GridCell.Tab.1.bottom" timestamp="1612301770256">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
@@ -206,24 +214,5 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="808" height="443" key="XDebugger.FullValuePopup/0.0.1600.870@0.0.1600.870" timestamp="1612287359997" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Repositories/ProdutoRepository.cs</url>
-          <line>57</line>
-          <properties documentPath="D:\MEUS CODIGOS\Tech\ArmazemAPI\Repositories\ProdutoRepository.cs" initialLine="57">
-            <startOffsets>
-              <option value="1630" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1650" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
