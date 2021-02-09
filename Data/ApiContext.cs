@@ -7,12 +7,7 @@ namespace ArmazemAPI.Data
 {
     public class ApiContext : DbContext
     {
-        /*Neste primeiro metodo nos vaos usar o a primeira forma de criação das entridades atraves
-         * do scaffod que é uma forma de criar automaticamente as entidades.
-         * Como neste exemplo vou usar apenas a tabela Matricula, pois como há propriedades de navegação
-         * das outras tabelas dentro dela, não preciso indica-las aqui. o EFC, vair identifica-las e vai criar
-         * automaticamente para nós.
-         */
+     
 
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
