@@ -59,6 +59,7 @@ namespace ArmazemAPI.Controllers
         }
         
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> NovoProduto(ProdutoDto model)
         {
             try

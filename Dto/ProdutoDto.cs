@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using NSwag.Annotations;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace ArmazemAPI.Dto
 {
     public class ProdutoDto
     {
+        [JsonIgnore]
         public int Id { get; set; }
         
         [Required(ErrorMessage = "Nome do Produto não pode ser nulo.")]

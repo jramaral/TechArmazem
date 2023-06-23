@@ -20,6 +20,6 @@ namespace ArmazemAPI.Models
     public enum Categoria
     {
         DOCE=0,
-        SALGADO=1
+        SALGADO=1,
     }
 }
