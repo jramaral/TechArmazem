@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+*.xml
+*.xml
+.idea/.idea.ArmazemAPI/.idea/indexLayout.xml
+.vs/ArmazemAPI/v17/.futdcache.v2
+.vs/ArmazemAPI/v17/.futdcache.v2
+*.xml
